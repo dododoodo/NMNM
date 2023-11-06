@@ -94,35 +94,3 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
-
-// modal slide
-
-let modalContents = ['k1', 'k2', 'k3', 'k4', 'k5', 'k6']; // 모달 컨텐츠 id 목록
-let currentIndex = 0; // 현재 표시 중인 모달 컨텐츠의 인덱스
-
-function showNextModalContent() {
-  // 현재 모달 컨텐츠를 숨김
-  document.getElementById(modalContents[currentIndex]).style.display = 'none';
-  
-  // 다음 모달 컨텐츠의 인덱스를 계산
-  currentIndex = (currentIndex + 1) % modalContents.length;
-  
-  // 다음 모달 컨텐츠를 표시
-  document.getElementById(modalContents[currentIndex]).style.display = 'block';
-}
-
-function showPreviousModalContent() {
-  // 현재 모달 컨텐츠를 숨김
-  document.getElementById(modalContents[currentIndex]).style.display = 'none';
-  
-  // 이전 모달 컨텐츠의 인덱스를 계산
-  currentIndex = (currentIndex - 1 + modalContents.length) % modalContents.length;
-  
-  // 이전 모달 컨텐츠를 표시
-  document.getElementById(modalContents[currentIndex]).style.display = 'block';
-}
-
-// 화살표 버튼에 이벤트 리스너를 추가
-document.getElementById('nextArrow').addEventListener('click', showNextModalContent);
-document.getElementById('prevArrow').addEventListener('click', showPreviousModalContent);
-
