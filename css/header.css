@@ -1,0 +1,103 @@
+
+/* -------- */
+
+
+
+html {
+	font-family: pretendard;
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 10%;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+	z-index: 8;
+}
+
+#header img {
+    position: absolute;
+    top: 27%;
+    left: 13%;
+    width: 13vh;
+    transition: opacity 0.2s; /* 투명도 트랜지션을 사용하여 부드럽게 변경 */
+}
+
+
+#header img:hover {
+    opacity: 0; /* 호버 상태에서 이미지를 숨깁니다. */
+    /* cursor: url('/img/c2.png') 2 2, pointer; */
+	
+}
+
+#main_menu {
+    float: right;
+    text-align: right;
+    margin-right: 13%;
+}
+
+
+#main_menu li {
+    
+    display: inline-block;
+    margin-left: 5vh;
+    font-size: 2.3vh;
+    margin-top: 3.5vh;
+    font-weight: 500;
+}
+
+/* #main_menu li:hover {
+    
+    cursor: url('/img/c2.png') 2 2, pointer;
+} */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main_menu #li1 {
+    transition: color 0.2s ease-in;
+}
+
+#main_menu #li1:hover {
+    color: #FAFF00;
+}
+
+#main_menu #li2 {
+    transition: color 0.2s ease-in;
+}
+
+#main_menu #li2:hover {
+    color: #0AFFA7;
+}
+
+#main_menu #li3 {
+    transition: color 0.2s ease-in;
+}
+
+#main_menu #li3:hover {
+    color: #FF5BDB;
+}
+
+#main_menu #li4 {
+    transition: color 0.2s ease-in;
+}
+
+#main_menu #li4:hover {
+    color: #42FF00;
+}
+
+#main_menu #li5 {
+    transition: color 0.2s ease-in;
+}
+
+#main_menu #li5:hover {
+    color: #FF8A00;
+}
