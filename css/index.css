@@ -1613,7 +1613,7 @@ right: 10%;
 	position: absolute;
 	color: #FEDD01;
 	font-size: 1.2vw;
-	top: 31%;
+	top: 28%;
 	left: 13%;
 	font-weight: 600;
 }
@@ -1867,9 +1867,12 @@ right: 10%;
 }
 
 #sec17 h2 {
-	margin-top: -15%;
-	font-family: 'Pretendard-SemiBold';
+	position: absolute;
 	color: #fff;
+	top: 22%;
+	font-size: 2.6vw;
+	margin-left: 13%;
+	font-family: 'Pretendard-SemiBold';
 	line-height: 120%;
 	z-index: 3;
 }
